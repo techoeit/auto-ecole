@@ -1,0 +1,61 @@
+<?php include ('server.php')?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bistrot</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="functions.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<?php
+include(" registration.php ");
+?>
+  
+</head>
+<body style="background-image:url('images/burger.jpg'); background-size:cover;">
+<div class="wrapper active login signup" >
+    <div class="container login">
+        <div class="col-left">
+            <div class="login-text">
+                <h2>Welcome!</h2>
+                <p>Create your account and live the full Bistrot <br>experience!</p>
+            </div>
+        </div>
+
+        <div class="col-right in">
+            <div class="login-form">
+                <h2>Sign Up</h2>
+                <form action="registration.php" method="post">
+                    <p>
+                        <label>Full name<span>*</span></label>
+                        <input type="text" name="name" placeholder="Full Name" required>
+                    </p>
+					<p>
+                        <label>Email address<span>*</span></label>
+                        <input type="text" name="email" placeholder="azizsrairi@gmail.com" required>
+                    </p>
+                    <p>
+                        <label>Password<span>*</span></label>
+                        <input type="password"  name="password_1" placeholder="Password" required>
+                    </p>
+					<p>
+                        <label>Confirm Password<span>*</span></label>
+                        <input type="password" name="password_2" placeholder="Password" required>
+                    </p>
+                    <p>
+                        <input type="submit" name="signup" value="Sign Up">
+                    </p>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
